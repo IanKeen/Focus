@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VCAbout">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="5" width="480" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="je1-cs-Bai">
+                    <rect key="frame" x="18" y="45" width="444" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dOI-AV-kHS"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Focus" id="i7w-WM-0ca">
+                        <font key="font" metaFont="system" size="30"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-Qx-aAM">
+                    <rect key="frame" x="188" y="20" width="104" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version: 1.0" id="6tF-bK-Mfo">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="je1-cs-Bai" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="F1O-uw-hCJ"/>
+                <constraint firstItem="je1-cs-Bai" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="KQR-93-voi"/>
+                <constraint firstItem="gOE-Qx-aAM" firstAttribute="top" secondItem="je1-cs-Bai" secondAttribute="bottom" constant="8" id="Ox6-my-Aad"/>
+                <constraint firstItem="gOE-Qx-aAM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="190" id="WEF-FS-eun"/>
+                <constraint firstAttribute="trailing" secondItem="je1-cs-Bai" secondAttribute="trailing" constant="20" id="lg9-2a-O3I"/>
+                <constraint firstAttribute="bottom" secondItem="gOE-Qx-aAM" secondAttribute="bottom" constant="20" id="nDj-zy-Cu1"/>
+                <constraint firstAttribute="trailing" secondItem="gOE-Qx-aAM" secondAttribute="trailing" constant="190" id="opO-kP-Bte"/>
+            </constraints>
+            <point key="canvasLocation" x="331" y="181.5"/>
+        </customView>
+    </objects>
+</document>
